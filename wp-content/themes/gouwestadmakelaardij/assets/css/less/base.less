@@ -1,0 +1,500 @@
+
+/* ==========================================================================
+	Base styles
+  used for some extra positioning possibilities
+========================================================================== */
+
+section{
+   padding: 3% 0;
+   }
+
+   .block{
+      position: absolute;
+      top: 50%;
+   }
+
+    .margin-top{
+    margin-top: 60px;
+   }
+
+   .small-padding{
+   padding: 20px;
+ }
+
+   .no-padding{
+    padding: 0;
+   }
+   
+   .content{
+      padding: 0;
+   }
+
+
+/* ==========================================================================
+  Typography
+========================================================================== */
+
+body {
+  font-size: 100%;
+  font-weight: normal;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+p {
+  margin: 0 0 1.5em;
+  line-height: 1.3em;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+}
+
+li{
+  line-height: 1.2em;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+.screen-reader-text {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* ==========================================================================
+  Headings
+========================================================================== */
+h1, h2, h3, h4{
+  color: #6a6a6a;
+  font-size: 2em;
+  line-height: 1.25;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+   margin: 0 auto 0.3em;
+}
+
+h2{
+  font-size: 1.8em;
+}
+
+h3{
+  font-size: 1.6em;
+}
+
+h4{
+  font-size: 1.4em;
+  small{
+    font-size: 70%;
+  }
+}
+
+h5{
+  font-size: 1.3em;
+}
+
+h6{
+  font-size: 1.1em;
+  text-transform: uppercase;
+}
+
+.mac h1,
+.mac h2,
+.mac h3,
+.mac h4,
+.mac h5,
+.mac h6 {
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.center{
+   text-align: center;
+   display: block;
+}
+
+.uppercase{
+  text-transform: uppercase;
+}
+
+.intro{
+  font-style: italic;
+}
+
+/* ==========================================================================
+  Coloring
+  Set background-color & set text color based on the background-color
+========================================================================== */
+
+
+.text-color (@bgcolor) when (lightness(@bgcolor) >= 50%) {
+  color: @textColor;
+  background: @bgcolor;
+}
+.text-color (@bgcolor) when (lightness(@bgcolor) < 50%) {
+  h1, h2, h3, h4, h5, h6, p, small{
+  color: @white;
+  }
+  color: @white;
+  background: @bgcolor;
+}
+
+.white{
+  .text-color(@white)
+  }
+
+.black{
+  .text-color(@black)
+}
+
+.gray{
+  .text-color(@gray)
+  }
+
+.graylight{
+  .text-color(@grayLight)
+  }
+
+
+.graylighter{
+  .text-color(@grayLighter)
+  }
+
+.graydark{
+  .text-color(@grayDark)
+  }
+  
+.graydarker{
+  .text-color(@grayDarker)
+  }
+
+.blue{
+  .text-color(@blue)
+  }
+
+.bluedark{
+  .text-color(@blueDark)
+  }
+  
+.green{
+  .text-color(@green)
+  }
+
+.red{
+  .text-color(@red)
+  }
+
+.yellow{
+  .text-color(@yellow)
+}
+ 
+.orange{
+  .text-color(@orange)
+  }
+
+
+.pink{
+  .text-color(@pink)
+  }
+
+.purple{
+  .text-color(@purple)
+  } 
+
+
+/* ==========================================================================
+   Navs
+========================================================================== */
+
+// No rounded corners and borders on buttons
+.btn{
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+// No rounded corners on breadcrumbs
+.breadcrumb{
+  border-radius: 0;
+}
+
+/* ---------------------------------------
+   Navbar main
+----------------------------------------*/
+
+#main-menu{
+   display: none;
+}
+
+nav.main{
+   height: auto;
+   background: #efefef;
+
+   .navbar{
+      border: none;
+      border-radius: none;
+      box-shadow: none;
+      font-size: 16px;
+
+      .navbar-inner{
+         border: none;
+         border-radius: none;
+         box-shadow: none;
+      }
+
+   }
+
+   h3{
+      font-size: 1.5em;
+   }
+
+   p{
+      font-size: 50%;
+      line-height: 105%;
+      margin: 0;
+   }
+
+   h5{
+    font-size: 90%;
+    line-height: 85%;
+    margin-bottom: 3%;
+   }
+
+   .label{
+    font-size: 50%;
+   }
+
+   .thumbnails li{
+         position: relative;
+
+         .hover{
+            position: absolute;
+            display: block;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            color: @white;
+            text-align: center;
+            opacity: 0;
+            -moz-transition: 0.4s all ease;
+              .content{
+                padding: 0 5px;
+              }
+            &:hover{
+               opacity: 1;
+               -moz-transition: 0.4s all ease;
+            }
+         }
+      }
+}
+
+.brand.saffier-logo{
+   width: 200px;
+}
+
+.menu-link{
+   position: absolute;
+   top: 0;
+   right: 150px;
+}
+
+
+/* ==========================================================================
+  Responsive slider base styles
+========================================================================== */
+
+#slider{
+  color: #fff;
+  position: relative;
+
+    .container{
+      position: relative;
+    
+      .overlay-block{
+      padding: 20px;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+  }
+}
+
+.rslides_nav{
+   height: 1.45em;
+   width: 1em;
+   font-size: 1.9em;
+   font-weight: 100;
+   line-height: 1.7em;
+   position: absolute;
+   top: 50%;
+   margin-top: -45px;
+   left: 0;
+   font-weight: normal;
+   background: @linkColor;
+   text-align: center;
+   color: @white;
+    display: block;
+   z-index: 100;
+
+    font-family: FontAwesome;
+
+    &.next {
+   right: 0;
+   left: auto;
+  }
+}
+
+
+/* ==========================================================================
+  Responsive styles
+========================================================================== */
+
+
+@media screen and (min-width: 480px) {
+  body { font-size: 105.5%; }
+}
+
+
+@media screen and (min-width: 680px) {
+  body {
+    font-size: 115%;
+  }
+
+  p{
+    font-weight: 300;
+  }
+
+  .mac p{
+    -webkit-font-smoothing: subpixel-antialiased;
+  }
+}
+
+
+@media screen and (min-width: 780px) {
+  body {font-size: 125%;}
+
+    h1{
+    font-size: 2.500em;
+   }
+
+   h2{
+    font-size: 2.2em;
+   }
+
+   h3{
+    font-size: 1.9em;
+   }
+}
+
+
+@media (max-width: 767px) {
+//remove the Bootstrap body padding on small devices & add to container
+  body{
+   padding: 0;
+   .container{
+    padding-left: 20px;
+    padding-right: 20px;
+   }
+  }
+
+  .navbar .brand{
+    max-width: 200px;
+    padding: 0;
+    margin: 0 0 ;
+  }
+
+  .carousel-control{
+    margin-left: -10px;
+    top: 101% !important;
+    &.right{
+      right: 5px;
+    }
+  }
+
+//Special class to remove margin on container & row on mobile & add to content
+  .fullwidth-mobile{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    .content{
+      padding: 0 20px;
+    }
+  }
+
+//smaller table font-sizes to fit screens
+  table{
+    font-size: 80%;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 979px) {
+   .block{
+      width: 724px;
+   }
+}
+
+
+@media screen and (min-width: 900px) {
+  body {
+    font-size: 150%;
+  }
+}
+
+
+@media screen and (min-width: 1200px) {
+  body {
+    font-size: 162.5%;
+  }
+
+  .block{
+   width: 1170px;
+  }
+}
+
+
+@media screen and (min-width: 1500px) {
+  body {
+    font-size: 170%;
+  }
+
+}
+
+
+@media screen and (min-width: 1700px) {
+  body {
+    font-size: 180%;
+  }
+}
+
+
+@media screen and (min-width: 1950px) {
+  body {
+    font-size: 200%;
+  }
+
+  .container{
+   width: 1600px;
+
+   .block{
+      width: 1600px;
+   }
+  }
+}
+
+
+
+
+
+
+
+

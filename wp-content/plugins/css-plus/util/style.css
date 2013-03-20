@@ -1,0 +1,52 @@
+/*Menu de Opções*/
+#css_plus_pluginid .inside, #css_plus_pluginid .inside p, #css_plus_pluginid .menu {margin: 0;padding: 0;}
+#css_plus_pluginid .menu {
+	background: #031519;
+	border-radius:5px 5px 0 0;
+	box-shadow: inset 0px 0px 5px -1px #586E75;
+}
+#css_plus_pluginid .menu h3 {
+	background: transparent;
+	cursor: auto;
+	border:0 none;
+	color: #586E75;
+	text-shadow: #021014 0 -1px;
+	display: inline-block;
+	width: 100px;
+}
+.CodeMirror {
+	border: 1px solid #031519;
+	border-radius: 0 0 5px 5px;
+}
+.CodeMirror-dialog {
+	background: #586E75;
+	color: #fff;
+	border-bottom: 1px solid #586E75;
+}
+.menu-itens {float: right;padding: 6px 3px 0 0;}
+.cp-ico {
+	display: inline-block;
+	height: 16px;
+	width: 16px;
+	background: url('../imgs/sprite.png') no-repeat;
+	margin-right: 3px;
+	cursor: pointer;
+}
+.cp-gear {
+	background-position:0 -16px;
+}
+.cp-gear:hover {
+	background-position:-17px -16px;
+}
+.cp-twitter {
+	background-position:0 -48px;
+}
+.cp-twitter:hover {
+	background-position:-17px -48px;
+}
+.cp-more {
+	background-position:0 0;
+}
+.cp-more:hover {
+	background-position:-17px 0;
+}
