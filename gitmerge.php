@@ -1,4 +1,4 @@
 <?php
-	`git fetch`;
+	`git fetch origin`;
 	`git merge origin/master`;
 	?>
