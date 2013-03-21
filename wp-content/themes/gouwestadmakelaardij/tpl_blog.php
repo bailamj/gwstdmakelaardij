@@ -27,7 +27,7 @@ Template Name: Blog Gouwestad Makelaardij
 		<div class="row-fluid">
 			<div class="span4">
 				<p><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( array(700,700) ); ?></a></p>
-				<p><i class="icon-calendar"></i> <?php echo get_the_time('d/m/Y', $post); ?><br>
+				<p><i class="icon-calendar"></i> <?php echo get_the_time('d F Y', $post); ?><br>
 				<i class="icon-bookmark-empty"></i> <?php the_category(' '); ?> </p>
 			</div>
 

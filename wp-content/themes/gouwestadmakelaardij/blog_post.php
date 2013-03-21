@@ -30,7 +30,7 @@ Template Name: Blog Post Gouwestad Makelaardij
 		<div class="row-fluid">
 			<div class="span3">
 				<p><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( array(500,500) ); ?></a></p>
-				<p><i class="icon-calendar"></i> <?php echo get_the_time('d/m/Y', $post); ?> <br>
+				<p><i class="icon-calendar"></i> <?php echo get_the_time('d F Y', $post); ?> <br>
 				<i class="icon-bookmark-empty"></i> <?php the_category(' '); ?> </p>
 				<i class="icon-tags"></i> Tags:
 				<?php the_tags('<ul><li>','</li><li>','</li></ul>'); ?>
