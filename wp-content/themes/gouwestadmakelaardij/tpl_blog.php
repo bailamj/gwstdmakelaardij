@@ -6,6 +6,7 @@ Template Name: Blog Gouwestad Makelaardij
 
 <?php get_template_part('templates/page', 'header'); ?>
 <?php $post= $_GET['post_id']; ?>
+
 <section>
 	<div class="container">
 		<div class="row-fluid">
