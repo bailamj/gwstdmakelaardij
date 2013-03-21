@@ -1,5 +1,12 @@
 <?php
 
-	`git fetch origin && git merge origin/master`;
+echo exec('whoami');
+echo exec('git status');
 
-	echo" `git status` ";
+exec('git fetch origin && git merge origin master');
+
+$output = shell_exec('ls -lart');
+echo "<pre>$output</pre>";
+
+$output2 = exec('/www/.git fetch origin 2>&1');
+var_dump($output2);
