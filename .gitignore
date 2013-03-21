@@ -42,3 +42,4 @@ wp-config.php
 wp-content/uploads/*
 cgi-bin
 ontwikkelen
+wp-content/plugins/wp-property/cache/
