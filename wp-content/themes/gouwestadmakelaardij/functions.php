@@ -106,5 +106,8 @@ function your_custom_form_class_attr( $class ) {
   return $class;
 }
 
-
+function new_excerpt_more( $more ) {
+  return '...';
+}
+add_filter('excerpt_more', 'new_excerpt_more');  // Lees verder verwijderen uit blog
 
