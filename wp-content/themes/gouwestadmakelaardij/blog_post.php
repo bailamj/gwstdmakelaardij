@@ -13,6 +13,8 @@ Template Name: Blog Post Gouwestad Makelaardij
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
+<?php $post= $_GET['post_id']; ?>
+
 <?php while (have_posts()) : the_post(); ?>
   <article <?php post_class(); ?>>
 
@@ -28,7 +30,7 @@ Template Name: Blog Post Gouwestad Makelaardij
 		<div class="row-fluid">
 			<div class="span3">
 				<p><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( array(500,500) ); ?></a></p>
-				<p><i class="icon-calendar"></i> <?php the_date(); ?> <br>
+				<p><i class="icon-calendar"></i> <?php echo get_the_time('d/m/Y', $post); ?> <br>
 				<i class="icon-bookmark-empty"></i> <?php the_category(' '); ?> </p>
 				<i class="icon-tags"></i> Tags:
 				<?php the_tags('<ul><li>','</li><li>','</li></ul>'); ?>

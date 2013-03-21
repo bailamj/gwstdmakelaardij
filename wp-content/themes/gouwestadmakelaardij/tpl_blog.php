@@ -5,7 +5,7 @@ Template Name: Blog Gouwestad Makelaardij
 ?>
 
 <?php get_template_part('templates/page', 'header'); ?>
-
+<?php $post= $_GET['post_id']; ?>
 <section>
 	<div class="container">
 		<div class="row-fluid">
@@ -27,7 +27,7 @@ Template Name: Blog Gouwestad Makelaardij
 		<div class="row-fluid">
 			<div class="span4">
 				<p><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( array(700,700) ); ?></a></p>
-				<p><i class="icon-calendar"></i> <?php the_date(); ?> <br>
+				<p><i class="icon-calendar"></i> <?php echo get_the_time('d/m/Y', $post); ?><br>
 				<i class="icon-bookmark-empty"></i> <?php the_category(' '); ?> </p>
 			</div>
 
@@ -66,3 +66,5 @@ Template Name: Blog Gouwestad Makelaardij
 		</div>
 	</div>
 </section>
+
+<?php wp_reset_query(); ?>
