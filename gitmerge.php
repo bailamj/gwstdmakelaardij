@@ -7,6 +7,6 @@ echo exec('/usr/local/bin/git status');
 $output = exec('ssh -T git@github.com');
 var_dump($output);
 
-$output2 = exec('/usr/local/bin/git fetch origin 2>&1');
+$output2 = exec('/usr/local/bin/git fetch origin && git merge origin/master 2>&1');
 var_dump($output2);
 
