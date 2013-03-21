@@ -16,7 +16,7 @@
         <span class="icon-bar"></span>
       </a>
       <a class="brand" href="<?php echo home_url(); ?>/">
-        <img src="http://www.gouwestadmakelaardij.nl/assets/img/logogouwestad.png" alt="logo"/>
+        <img src="http://www.gouwestadmakelaardij.nl/wp-content/themes/gouwestadmakelaardij.nl/assets/img/logogouwestad.png" alt="logo"/>
       </a>
       <nav class="nav-collapse" role="navigation">
         <?php
