@@ -1,4 +1,4 @@
-?php
+<?php
  if( ! function_exists('apache_get_modules') ){ phpinfo(); die; }
  $result = ' not available';
  if(in_array('mod_rewrite',apache_get_modules())) $result = ' 
