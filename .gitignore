@@ -13,6 +13,7 @@
 *.vi
 *~
 *.sass-cache
+*.htaccess
 
 gitmerge.php
 
@@ -46,3 +47,4 @@ cgi-bin
 ontwikkelen
 wp-content/plugins/wp-property/cache/
 xmlscript
+
