@@ -1389,7 +1389,7 @@ if(!function_exists('draw_property_search_form')):
       <div class="clear"></div>
       </li>
       <?php } ?>
-      <li class="wpp_search_form_element submit"><input type="submit" class="wpp_search_button submit btn btn-large" value="<?php _e('Search','wpp') ?>" /></li>
+      <li class="wpp_search_form_element submit"><input type="submit" class="wpp_search_button submit btn btn-large btn-primary" value="<?php _e('Search','wpp') ?>" /></li>
     </ul>
     </form>
   <?php }

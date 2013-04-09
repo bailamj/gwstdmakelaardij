@@ -1,17 +1,5 @@
 
 # BEGIN WordPress
-<IfModule mod_rewrite.c>
-RewriteEngine On
-RewriteBase /
-RewriteRule ^index\.php$ - [L]
-RewriteRule ^assets/css/(.*) /wp-content/themes/gouwestadmakelaardij/assets/css/$1 [QSA,L]
-RewriteRule ^assets/js/(.*) /wp-content/themes/gouwestadmakelaardij/assets/js/$1 [QSA,L]
-RewriteRule ^assets/img/(.*) /wp-content/themes/gouwestadmakelaardij/assets/img/$1 [QSA,L]
-RewriteRule ^plugins/(.*) /wp-content/plugins/$1 [QSA,L]
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /index.php [L]
-</IfModule>
 
 # END WordPress
 

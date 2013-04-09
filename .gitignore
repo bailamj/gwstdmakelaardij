@@ -13,6 +13,9 @@
 *.vi
 *~
 *.sass-cache
+*.htaccess
+
+gitmerge.php
 
 # OS or Editor folders
 .DS_Store
@@ -43,3 +46,5 @@ wp-content/uploads/*
 cgi-bin
 ontwikkelen
 wp-content/plugins/wp-property/cache/
+xmlscript
+
