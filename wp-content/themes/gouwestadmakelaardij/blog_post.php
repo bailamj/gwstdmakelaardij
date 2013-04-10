@@ -23,12 +23,12 @@ Template Name: Blog Post Gouwestad Makelaardij
 		<div class="row-fluid">
 			<div class="span12">
 				<div class="page-header center">
-					<h3><?php single_post_title(); ?></h3>
+					<h1><?php single_post_title(); ?></h1>
 				</div>
 			</div>
 		</div>
 		<div class="row-fluid">
-			<div class="span3">
+			<div class="span3 postmeta">
 				<p><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( array(500,500) ); ?></a></p>
 				<p><i class="icon-calendar"></i> <?php echo get_the_time('d F Y', $post); ?> <br>
 				<i class="icon-bookmark-empty"></i> <?php the_category(' '); ?> </p>
@@ -44,6 +44,7 @@ Template Name: Blog Post Gouwestad Makelaardij
 	           <!-- AddThis Button END -->
 	            <i class="icon-thumbs-up"></i> Like ons
 				<div class="fb-like" data-href="https://www.facebook.com/pages/Gouwestad-Makelaardij/176712525694328?fref=ts" data-send="false" data-width="100%" data-show-faces="true"></div>
+				<hr>
 			</div>
 			<div class="span8 offset1">
 				<?php the_content(); ?>

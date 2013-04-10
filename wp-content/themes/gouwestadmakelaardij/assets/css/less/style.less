@@ -937,3 +937,37 @@ select {
   width: 45%;
 }
 
+//Styling nieuwsberichten
+
+.single-post{
+  h1{
+    font-size: 3.2em; //extra grote titel
+  }
+  p{
+    font-family: 'Lora', serif;
+    line-height: 1.65em;
+  }
+  h5{
+    font-size: 1.8em;
+    line-height: 1.1em;
+    font-weight: bold;
+  }
+  .postmeta{
+    font-size: 80%;
+  }
+  .intro{
+    font-size: 1.2em;
+  }
+}
+
+// Nieuwsberichten responsive
+
+@media (max-width: 767px) {
+  .single-post{
+    h1{
+      font-size: 2.6em;
+      line-height: 1.1em;
+    }
+  }
+}
+
