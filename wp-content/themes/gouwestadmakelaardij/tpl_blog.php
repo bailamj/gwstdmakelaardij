@@ -13,7 +13,7 @@ Template Name: Blog Gouwestad Makelaardij
 			<div class="span12">
 				<div class="page-header center">
 					<h1>Het laatste nieuws</h1>
-					<p class="intro center">Hier houden we je op de hoogte van het reilen zeilen van ons bedrijf, het laatste nieuws 
+					<p class="intro center">Hier houden we je op de hoogte van het reilen en zeilen van ons bedrijf, het laatste nieuws 
 						op de landelijke en regionale woningmarkt en geven onze kijk op woning- en financieringsvraagstukken.</p>
 				</div>
 			</div>

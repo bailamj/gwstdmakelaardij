@@ -9767,8 +9767,8 @@ select {
 }
 .single-post p,
 .nieuws p,
-.single-post ul li,
-.nieuws ul li {
+.single-post .postmeta ul li,
+.nieuws .postmeta ul li {
   font-family: 'Lora', serif;
   line-height: 1.65em;
   font-weight: normal;
