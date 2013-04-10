@@ -9761,27 +9761,52 @@ select {
 .price {
   width: 45%;
 }
-.single-post h1 {
+.single-post h1,
+.nieuws h1 {
   font-size: 3.2em;
 }
-.single-post p {
+.single-post p,
+.nieuws p,
+.single-post ul li,
+.nieuws ul li {
   font-family: 'Lora', serif;
   line-height: 1.65em;
+  font-weight: normal;
 }
-.single-post h5 {
+.single-post h3,
+.nieuws h3 {
+  font-weight: bold;
+}
+.single-post h3 a,
+.nieuws h3 a {
+  color: inherit;
+}
+.single-post h5,
+.nieuws h5 {
   font-size: 1.8em;
   line-height: 1.1em;
   font-weight: bold;
 }
-.single-post .postmeta {
+.single-post .postmeta,
+.nieuws .postmeta {
   font-size: 80%;
 }
-.single-post .intro {
-  font-size: 1.2em;
+.single-post .intro,
+.nieuws .intro {
+  font-size: 1.1em;
 }
 @media (max-width: 767px) {
-  .single-post h1 {
+  .single-post h1,
+  .nieuws h1 {
     font-size: 2.6em;
     line-height: 1.1em;
+  }
+  .single-post p,
+  .nieuws p {
+    font-size: 1.1em;
+  }
+  .single-post .intro,
+  .nieuws .intro {
+    font-size: 1.1em;
   }
 }

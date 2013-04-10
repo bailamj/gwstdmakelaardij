@@ -939,13 +939,20 @@ select {
 
 //Styling nieuwsberichten
 
-.single-post{
+.single-post, .nieuws{
   h1{
     font-size: 3.2em; //extra grote titel
   }
-  p{
+  p, ul li{
     font-family: 'Lora', serif;
     line-height: 1.65em;
+    font-weight: normal;
+  }
+  h3{
+    font-weight: bold;
+    a{
+      color: @headingsColor;
+    }
   }
   h5{
     font-size: 1.8em;
@@ -956,17 +963,23 @@ select {
     font-size: 80%;
   }
   .intro{
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
 }
 
 // Nieuwsberichten responsive
 
 @media (max-width: 767px) {
-  .single-post{
+  .single-post, .nieuws{
     h1{
       font-size: 2.6em;
       line-height: 1.1em;
+    }
+    p{
+      font-size: 1.1em;
+    }
+    .intro{
+      font-size: 1.1em;
     }
   }
 }

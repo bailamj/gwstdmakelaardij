@@ -42,7 +42,7 @@ Template Name: Blog Post Gouwestad Makelaardij
 	            <a class="addthis_button_preferred_3"></a>
 	            </div><br>
 	           <!-- AddThis Button END -->
-	            <i class="icon-thumbs-up"></i> Like ons
+	            <i class="icon-thumbs-up"></i> Like ons<br>
 				<div class="fb-like" data-href="https://www.facebook.com/pages/Gouwestad-Makelaardij/176712525694328?fref=ts" data-send="false" data-width="100%" data-show-faces="true"></div>
 				<hr>
 			</div>
