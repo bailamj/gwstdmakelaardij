@@ -377,7 +377,7 @@ ul.wpp_google_maps_infobox .wpp_google_maps_attribute_row span.value{
 }
 
 input.wpp_search_input_field_min, input.wpp_search_input_field_max {
-  width: 40px;
+  width: none;
 }
 
 #container.floorplan_container {
