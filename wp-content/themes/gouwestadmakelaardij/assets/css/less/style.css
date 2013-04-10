@@ -9793,13 +9793,14 @@ select {
 }
 .single-post .intro,
 .nieuws .intro {
-  font-size: 1.1em;
+  font-size: 1.2em;
 }
 @media (max-width: 767px) {
   .single-post h1,
   .nieuws h1 {
     font-size: 2.6em;
     line-height: 1.1em;
+    word-break: hyphenate;
   }
   .single-post p,
   .nieuws p {
@@ -9807,6 +9808,6 @@ select {
   }
   .single-post .intro,
   .nieuws .intro {
-    font-size: 1.1em;
+    font-size: 1.2em;
   }
 }
