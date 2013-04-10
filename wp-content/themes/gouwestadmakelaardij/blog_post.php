@@ -33,7 +33,7 @@ Template Name: Blog Post Gouwestad Makelaardij
 				<p><i class="icon-calendar"></i> <?php echo get_the_time('d F Y', $post); ?> <br>
 				<i class="icon-bookmark-empty"></i> <?php the_category(' '); ?> </p>
 				<i class="icon-tags"></i> Tags:
-				<p><?php the_tags('<ul><li>','</li><li>','</li></ul>'); ?></p>
+				<?php the_tags('<ul><li>','</li><li>','</li></ul>'); ?>
 				<i class="icon-share-alt"></i> Deel dit bericht<br>
 				<!-- AddThis Button BEGIN -->
 	            <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
