@@ -9764,7 +9764,8 @@ select {
 .single-post h1 {
   font-size: 3.2em;
 }
-.single-post p {
+.single-post p,
+.single-post ul li {
   font-family: 'Lora', serif;
   line-height: 1.65em;
   font-weight: normal;
