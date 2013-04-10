@@ -9763,4 +9763,13 @@ select {
 }
 .single-post p {
   font-family: 'Lora', serif;
+  line-height: 1.65em;
+}
+.single-post h5 {
+  font-size: 1.8em;
+  line-height: 1.1em;
+  font-weight: bold;
+}
+.single-post .intro {
+  font-size: 1.2em;
 }
