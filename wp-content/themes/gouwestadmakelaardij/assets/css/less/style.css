@@ -9779,3 +9779,9 @@ select {
 .single-post .intro {
   font-size: 1.2em;
 }
+@media (max-width: 767px) {
+  .single-post h1 {
+    font-size: 2.6em;
+    line-height: 1.1em;
+  }
+}
