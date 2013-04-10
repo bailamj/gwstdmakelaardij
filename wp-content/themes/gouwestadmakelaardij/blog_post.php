@@ -23,7 +23,7 @@ Template Name: Blog Post Gouwestad Makelaardij
 		<div class="row-fluid">
 			<div class="span12">
 				<div class="page-header center">
-					<h3><?php single_post_title(); ?></h3>
+					<h1><?php single_post_title(); ?></h1>
 				</div>
 			</div>
 		</div>
