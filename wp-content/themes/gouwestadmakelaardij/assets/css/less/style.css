@@ -9024,6 +9024,7 @@ a:hover {
 }
 .breadcrumb i {
   color: #6a6a6a;
+  padding: 0 0.4em;
 }
 .btn {
   -webkit-transition: 0.3s ease;
