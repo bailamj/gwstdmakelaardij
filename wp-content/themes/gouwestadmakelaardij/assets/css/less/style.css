@@ -9761,6 +9761,9 @@ select {
 .price {
   width: 45%;
 }
+.single-post h1 {
+  font-size: 3.2em;
+}
 .single-post p {
   font-family: 'Lora', serif;
   line-height: 1.65em;
