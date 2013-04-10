@@ -9767,6 +9767,7 @@ select {
 .single-post p {
   font-family: 'Lora', serif;
   line-height: 1.65em;
+  font-weight: normal;
 }
 .single-post h5 {
   font-size: 1.8em;
@@ -9777,11 +9778,14 @@ select {
   font-size: 80%;
 }
 .single-post .intro {
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 @media (max-width: 767px) {
   .single-post h1 {
     font-size: 2.6em;
     line-height: 1.1em;
+  }
+  .single-post p {
+    font-size: 1.2em;
   }
 }
