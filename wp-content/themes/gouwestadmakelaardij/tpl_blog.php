@@ -13,17 +13,18 @@ Template Name: Blog Gouwestad Makelaardij
 			<div class="span12">
 				<div class="page-header center">
 					<h1>Het laatste nieuws</h1>
-					<p class="intro center">Lees hier over ons, de ontwikkelingen op de woningmarkt maar ook op de financiele markt voor bijvoorbeelde de hypotheken.</p>
+					<p class="intro center">Hier houden we je op de hoogte van het reilen zeilen van ons bedrijf, het laatste nieuws 
+						op de landelijke en regionale woningmarkt en geven onze kijk op woning- en financieringsvraagstukken.</p>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
 
-<?php query_posts('post_type=post&post_status=publish&posts_per_page=2&paged='. get_query_var('paged')); ?>
+<?php query_posts('post_type=post&post_status=publish&posts_per_page=5&paged='. get_query_var('paged')); ?>
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-<section>
+<article>
 	<div class="container">
 		<div class="row-fluid">
 			<div class="span4">
@@ -44,7 +45,7 @@ Template Name: Blog Gouwestad Makelaardij
 		</div>
 	  <hr>
 	</div>
-</section>
+</article>
 
 		<?php endwhile; else: ?>
 		<p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
