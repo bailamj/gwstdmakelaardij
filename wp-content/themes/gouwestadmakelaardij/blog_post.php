@@ -33,7 +33,7 @@ Template Name: Blog Post Gouwestad Makelaardij
 				<p><i class="icon-calendar"></i> <?php echo get_the_time('d F Y', $post); ?> <br>
 				<i class="icon-bookmark-empty"></i> <?php the_category(' '); ?> </p>
 				<i class="icon-tags"></i> Tags:
-				<?php the_tags('<ul><li>','</li><li>','</li></ul>'); ?>
+				<p><?php the_tags('<ul><li>','</li><li>','</li></ul>'); ?></p>
 				<i class="icon-share-alt"></i> Deel dit bericht<br>
 				<!-- AddThis Button BEGIN -->
 	            <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
@@ -42,7 +42,7 @@ Template Name: Blog Post Gouwestad Makelaardij
 	            <a class="addthis_button_preferred_3"></a>
 	            </div><br>
 	           <!-- AddThis Button END -->
-	            <i class="icon-thumbs-up"></i> Like ons
+	            <i class="icon-thumbs-up"></i> Like ons<br>
 				<div class="fb-like" data-href="https://www.facebook.com/pages/Gouwestad-Makelaardij/176712525694328?fref=ts" data-send="false" data-width="100%" data-show-faces="true"></div>
 				<hr>
 			</div>
