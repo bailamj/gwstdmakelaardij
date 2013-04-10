@@ -9773,6 +9773,9 @@ select {
   line-height: 1.1em;
   font-weight: bold;
 }
+.single-post .postmeta {
+  font-size: 80%;
+}
 .single-post .intro {
   font-size: 1.2em;
 }
