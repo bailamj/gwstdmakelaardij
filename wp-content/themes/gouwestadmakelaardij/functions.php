@@ -111,3 +111,29 @@ function new_excerpt_more( $more ) {
 }
 add_filter('excerpt_more', 'new_excerpt_more');  // Lees verder verwijderen uit blog
 
+function create_post_type() {  
+    register_post_type( 'gm_nieuwbouwtypes',  
+        array(  
+            'labels' => array(  
+                'name' => __( 'Nieuwbouwtypes' ),  
+                'singular_name' => __( 'Nieuwbouwtype' ),
+                'menu_name' => __('Nieuwbouw'),
+                'all_items' => __('Types'),
+                'add_new_item' => __('Nieuw Type'),
+                'new_item' => __('Nieuw Type'),
+                'edit_item' => __('Bewerk Type'),
+                'view_item' => __('Bekijk Type'),
+                'search_items' => __('Zoek Type'),
+                'not_found' => __('Geen Type Gevonden'),
+                'not_found_in_trash' => __('Geen Type In Prullenbak')
+            ),  
+        'public' => true,  
+        'menu_position' => 5,
+        'menu_icon' =>  'http://www.gouwestadmakelaardij.nl/ontwikkel/wp-content/themes/gouwestadmakelaardij/assets/img/icon_nieuwbouwtypes.png',  
+        'rewrite' => array('slug' => 'nieuwbouwtypes')  
+        )  
+    );  
+}  
+  
+add_action( 'init', 'create_post_type' ); // Nieuwbouwtypes toevoegen in de admin
+
