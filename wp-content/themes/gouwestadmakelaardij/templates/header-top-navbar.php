@@ -3,7 +3,7 @@
           <button type="button" class="close close-cookie" data-dismiss="alert">&times;</button>
           Cookiegebruik: 
           Om de gebruiksvriendelijkheid van deze site te verbeteren maken wij gebruik van cookies.
-          <button type="button" class="btn btn-danger closecookie" data-dismiss="alert">deze melding sluiten</button>
+          <button type="button" class="btn btn-danger close-cookie" data-dismiss="alert">deze melding sluiten</button>
         </div>
 </div>
 
