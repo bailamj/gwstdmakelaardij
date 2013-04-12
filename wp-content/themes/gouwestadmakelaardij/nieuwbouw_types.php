@@ -27,8 +27,6 @@ Template Name: Nieuwbouwtypes Gouwestad Makelaardij
 		<div class="row-fluid">
 			<div class="span4">
 				<p><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( array(700,700) ); ?></a></p>
-				<p><i class="icon-calendar"></i> <?php echo get_the_time('d F Y', $post); ?><br>
-				<i class="icon-bookmark-empty"></i> <?php the_category(' '); ?> </p>
 			</div>
 
 			<div class="span8">
@@ -36,7 +34,7 @@ Template Name: Nieuwbouwtypes Gouwestad Makelaardij
 					<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 					<p><?php the_excerpt(); ?></p>
 					<div class="align-right">
-	                    <a href="<?php the_permalink(); ?>" class="btn btn-primary btn-small"> lees verder <i class="icon-circle-arrow-right"></i></a>
+	                    <a href="<?php the_permalink(); ?>" class="btn btn-primary btn-small"> Bekijk type <i class="icon-circle-arrow-right"></i></a>
 	                </div>
 				</div><!-- /#post-<?php get_the_ID(); ?> -->
 			</div>

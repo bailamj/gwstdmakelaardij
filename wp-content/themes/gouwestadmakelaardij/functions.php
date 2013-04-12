@@ -139,3 +139,22 @@ function create_post_type() {
   
 add_action( 'init', 'create_post_type' ); // Nieuwbouwtypes toevoegen in de admin
 
+function create_my_taxonomies() {
+    register_taxonomy(
+        'gm_nieuwbouwtypes_woningtype',
+        'gm_nieuwbouwtypes',
+        array(
+            'labels' => array(
+                'name' => 'Woning Types',
+                'add_new_item' => 'Nieuw Woning Type',
+                'new_item_name' => "Een Nieuw Woning Type"
+            ),
+            'show_ui' => true,
+            'show_tagcloud' => false,
+            'hierarchical' => true
+        )
+    );
+} 
+
+add_action( 'init', 'create_my_taxonomies', 0 ); // Taxonomies
+
