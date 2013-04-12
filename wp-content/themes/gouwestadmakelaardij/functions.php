@@ -129,7 +129,8 @@ function create_post_type() {
             ),  
         'public' => true,  
         'menu_position' => 5,
-        'menu_icon' =>  'http://www.gouwestadmakelaardij.nl/ontwikkel/wp-content/themes/gouwestadmakelaardij/assets/img/icon_nieuwbouwtypes.png',  
+        'menu_icon' =>  'http://www.gouwestadmakelaardij.nl/ontwikkel/wp-content/themes/gouwestadmakelaardij/assets/img/icon_nieuwbouwtypes.png',
+        'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments', 'revisions' ),  
         'rewrite' => array('slug' => 'nieuwbouwtypes')  
         )  
     );  
