@@ -136,7 +136,7 @@
             foreach( $gallery as $image ) {
                 echo '<div class="item">';
                
-                 echo wp_get_attachment_image($image->ID, 'full', false, $attr);
+                 echo wp_get_attachment_image($image->ID, 'large', false, $attr);
               
                 echo '</div>';
             }
