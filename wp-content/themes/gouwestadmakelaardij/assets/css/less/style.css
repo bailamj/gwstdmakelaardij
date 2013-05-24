@@ -9725,6 +9725,14 @@ select {
 .price {
   width: 45%;
 }
+.wpp_search_button.submit:before {
+  font-family: "fontAwesome";
+  font-size: 1.5em;
+  float: left;
+  margin: -0.32em -0.8em;
+  padding: 0.32em 0.5em;
+  color: #fff;
+}
 .single-post h1,
 .nieuws h1 {
   font-size: 3.2em;
